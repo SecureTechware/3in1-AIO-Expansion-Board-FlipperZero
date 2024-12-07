@@ -3,6 +3,7 @@
 This guide will walk you through updating your AIO board to the latest firmware and installing the Marauder firmware.
 
 ## Requirements
+
 - **AIO V1.4 Board**
 - **USB Type-C Cable**
 - **Computer with a supported browser** (Edge recommended)
@@ -18,16 +19,21 @@ This guide will walk you through updating your AIO board to the latest firmware 
 5. In the ESP Web Tool:
    - Select `ESP32-s2` as the chip.
    - Upload the firmware files from the `firmware/latest` directory.
+   - Follow this order
+     ![AIO Board](images/web.jpg)
 6. Click **PROM** to start flashing.
 7. Wait for the progress bar to reach 100%. If interrupted:
    - Ensure all connections are secure.
    - Reconnect and retry.
 
 ## Optimizing WiFi Scanning
+
 If WiFi scanning is slow, remove the two components highlighted in the provided board diagram (requires soldering).
+![AIO Board](images/rem.jpg)
 
 ---
 
 ## Notes
+
 - Avoid plugging/unplugging the module while powered on to prevent damage.
 - Check the **LED indicators** to confirm the current mode.
